@@ -1,0 +1,26 @@
+{
+  "name": "hmi-vmc-operator",
+  "version": "1.0.0",
+  "description": "VMC Operator HMI - Startup and operation workflow full-stack web application",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "npm run build --prefix client",
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "install:all": "npm run install:server && npm run install:client",
+    "postinstall": "npm run install:server && npm run install:client && npm run build"
+  },
+  "keywords": [
+    "vmc",
+    "hmi",
+    "cnc",
+    "operator",
+    "fanuc",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC"
+}

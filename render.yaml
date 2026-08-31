@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hmi-vmc-operator
+    env: node
+    buildCommand: npm run postinstall
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
